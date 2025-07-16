@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Amina Galadima English Academy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body {
+      background: linear-gradient(to right, #f0f8ff, #e0f7fa);
+      font-family: 'Segoe UI', sans-serif;
+    }
+    header {
+      background: linear-gradient(to right, #004aad, #00bcd4);
+      color: white;
+      padding: 50px 20px;
+      border-radius: 0 0 30px 30px;
+    }
+    header h1 {
+      font-weight: bold;
+      font-size: 2.7rem;
+    }
+    .form-container {
+      background-color: #ffffffdd;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      background-color: #004aad;
+      color: white;
+      padding: 40px 20px;
+      margin-top: 60px;
+      border-radius: 30px 30px 0 0;
+    }
+    .social-icons a {
+      color: white;
+      font-size: 1.5rem;
+      margin-right: 20px;
+      text-decoration: none;
+    }
+    .social-icons a:hover {
+      color: #ffd700;
+    }
+    .fadeInOnScroll {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 1s ease-in-out;
+    }
+    .fadeInOnScroll.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .btn {
+      font-weight: 600;
+      border-radius: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<header class="text-center fadeInOnScroll">
+  <div class="d-flex align-items-center justify-content-center gap-3 flex-wrap">
+    <img src="images/logo.png" alt="Logo" style="height: 70px; width: auto; border-radius: 12px;" />
+    <h1 class="m-0">Amina Galadima English Academy</h1>
+  </div>
+  <nav class="d-flex justify-content-center flex-wrap gap-3 mt-4">
+    <a href="index.html" class="btn btn-outline-light rounded-pill px-4 shadow-sm">🏠 Home</a>
+    <a href="lessons.html" class="btn btn-outline-light rounded-pill px-4 shadow-sm">📘 Lessons</a>
+    <a href="exercises.html" class="btn btn-outline-light rounded-pill px-4 shadow-sm">📝 Exercises</a>
+    <a href="contact.html" class="btn btn-outline-light rounded-pill px-4 shadow-sm">📞 Contact</a>
+  </nav>
+</header>
+
+<main class="container my-5">
+  <h2 class="text-center mb-4 fw-bold fadeInOnScroll">📩 Contact Us</h2>
+
+  <div class="row justify-content-center">
+    <div class="col-md-8 fadeInOnScroll form-container">
+      <form action="https://formspree.io/f/xgvzekkp" method="POST">
+        <div class="mb-3">
+          <label for="name" class="form-label">Your Full Name</label>
+          <input type="text" name="name" class="form-control" id="name" required/>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Your Email Address</label>
+          <input type="email" name="email" class="form-control" id="email" required/>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Your Message</label>
+          <textarea name="message" id="message" rows="5" class="form-control" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer class="text-center fadeInOnScroll">
+  <h5 class="mb-3">Contact Information</h5>
+  <p class="mb-1">📞 +227 89311060 / +227 94945783</p>
+  <p class="mb-1">📧 Galadimamoustapha36@gmail.com</p>
+  <p class="mb-3">👤 Moustapha Ibrahim Galadima</p>
+  <div class="social-icons">
+    <a href="https://wa.me/22789311060" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://wa.me/2348146303825" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+</footer>
+
+<script>
+  function revealOnScroll() {
+    const elements = document.querySelectorAll('.fadeInOnScroll');
+    elements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 50) {
+        el.classList.add('visible');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+</script>
+
+</body>
+</html>
