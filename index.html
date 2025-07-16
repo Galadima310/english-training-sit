@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Amina Galadima English Academy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      background: linear-gradient(to right, #f0f8ff, #e0f7fa);
+      font-family: 'Segoe UI', sans-serif;
+    }
+    header {
+      background: linear-gradient(to right, #004aad, #00bcd4);
+      color: white;
+      padding: 50px 20px;
+      border-radius: 0 0 30px 30px;
+    }
+    header h1 {
+      font-weight: bold;
+      font-size: 2.7rem;
+    }
+    .section-image {
+      max-width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .image-section {
+      margin-bottom: 40px;
+    }
+    .image-text {
+      font-size: 1.1rem;
+      margin-top: 15px;
+      padding: 15px;
+      background-color: #ffffffd9;
+      border-left: 4px solid #004aad;
+      border-radius: 10px;
+    }
+    footer {
+      background-color: #004aad;
+      color: white;
+      padding: 40px 20px;
+      margin-top: 60px;
+      border-radius: 30px 30px 0 0;
+    }
+    .social-icons a {
+      color: white;
+      font-size: 1.5rem;
+      margin-right: 20px;
+      text-decoration: none;
+    }
+    .social-icons a:hover {
+      color: #ffd700;
+    }
+    .fadeInOnScroll,
+    .zoomInOnScroll,
+    .slideLeftOnScroll,
+    .slideRightOnScroll {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 1s ease-in-out;
+    }
+    .fadeInOnScroll.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .zoomInOnScroll.visible {
+      opacity: 1;
+      transform: scale(1);
+    }
+    .zoomInOnScroll {
+      transform: scale(0.8);
+    }
+    .slideLeftOnScroll.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .slideLeftOnScroll {
+      transform: translateX(-100px);
+    }
+    .slideRightOnScroll.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .slideRightOnScroll {
+      transform: translateX(100px);
+    }
+  </style>
+</head>
+<body>
+  <header class="fadeInOnScroll text-center">
+    <div class="d-flex align-items-center justify-content-center gap-3 flex-wrap">
+      <img src="images/logo.png" alt="Academy Logo" style="height: 70px; width: auto; border-radius: 12px;" />
+      <h1 class="m-0">Amina Galadima English Academy</h1>
+    </div>
+    <nav class="d-flex justify-content-center flex-wrap gap-3 mt-4">
+      <a href="index.html" class="btn btn-outline-light rounded-pill px-4 shadow-sm">🏠 Home</a>
+      <a href="lessons.html" class="btn btn-outline-light rounded-pill px-4 shadow-sm">📘 Lessons</a>
+      <a href="exercises.html" class="btn btn-outline-light rounded-pill px-4 shadow-sm">📝 Exercises</a>
+      <a href="contact.html" class="btn btn-outline-light rounded-pill px-4 shadow-sm">📞 Contact</a>
+    </nav>
+  </header>
+  <main class="container my-5">
+    <h2 class="text-center mb-5 fw-bold fadeInOnScroll">Welcome to English Learning Excellence 🌍</h2>
+    <div class="row g-5">
+      <div class="col-md-6 fadeInOnScroll image-section">
+        <img src="images/english_books.jpg" alt="English Books" class="section-image" />
+        <div class="image-text">Books are your passport to the world of knowledge. At Amina Galadima Academy, we believe in empowering students with rich, well-structured English books designed to improve grammar, vocabulary, and comprehension. Dive in, explore, and grow through reading.</div>
+      </div>
+      <div class="col-md-6 fadeInOnScroll image-section">
+        <img src="images/online_class.jpg" alt="Online Class" class="section-image" />
+        <div class="image-text">Learning has no boundaries. With our online classes, students can access high-quality English lessons from anywhere, anytime. Interactive, engaging, and convenient — join our virtual classroom today and learn at your own pace.</div>
+      </div>
+      <div class="col-md-6 fadeInOnScroll image-section">
+        <img src="images/quiz_time.jpg" alt="Quiz Time" class="section-image" />
+        <div class="image-text">Quizzes sharpen your mind and test your understanding. They help identify your strengths and areas of improvement. At Amina Galadima Academy, we provide fun, motivating quizzes to reinforce what you've learned and push you to excellence.</div>
+      </div>
+      <div class="col-md-6 fadeInOnScroll image-section">
+        <img src="images/students.jpg" alt="Students Studying" class="section-image" />
+        <div class="image-text">Surrounding yourself with dedicated students builds a strong learning community. At our academy, you'll join a family of learners who support, inspire, and encourage one another to reach their full English potential.</div>
+      </div>
+    </div>
+  </main>
+  <footer class="text-center fadeInOnScroll">
+    <h5 class="mb-3">Contact Information</h5>
+    <p class="mb-1">📞 +227 89311060 / +227 94945783</p>
+    <p class="mb-1">📧 Galadimamoustapha36@gmail.com</p>
+    <p class="mb-3">👤 Moustapha Ibrahim Galadima</p>
+    <div class="social-icons">
+      <a href="https://wa.me/22789311060" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://wa.me/2348146303825" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
